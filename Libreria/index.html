@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Library Application</title>
+		<!-- Código para mostrar as habilidades de programação usando como teste uma aplicação para o 
+	 		 gerenciamento de uma biblioteca através de um cliente WEB
+
+	 		 Code to show the programming skills using as proof an application for the management of a
+	 		 library through a WEB client
+
+	 		 Código para mostrar las habilidades de programación usando como prueba una aplicación para
+	 		 la gestión de una librería a través de un cliente WEB 
+	
+	 		 Contacto: +55(92)99348-3965 felixfzb@gmail.com -->
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1 style="font-size:32px;"> Cliente WEB de libreria</h1>
+		</header>
+		<main>
+			<!-- Bloco para mostrar os autores -->
+			<button type="button" id="mostrar_autores"> Mostrar Autores Registrados </button>
+			<section>
+				<table id="autores">
+				</table>
+			</section>
+			<!-- Bloco para mostrar os livros -->
+			<button type="button" id="mostrar_libros"> Mostrar  Libros  Disponibles </button>
+			<section>
+				<table id="libros">
+				</table>
+			</section>
+			<!-- Blocos para eleição do comando e o autor ou o livro -->
+			<article>
+				<input type="radio" name="accion" value="incluir" checked> Incluir
+				<input type="radio" name="accion" value="excluir"> Excluir
+				<input type="radio" name="accion" value="editar"> Editar
+			</article>
+			<article>
+				<input type="radio" name="seleccion" value="autor" checked> Autor
+				<input type="radio" name="seleccion" value="libro"> Libro
+			</article>
+			<article>
+				<button type="button" id="continuar"> Continuar </button>
+			</article>
+		</main>
+		<footer>
+			&copy;2018 Felix Fernandez
+		</footer>
+	</body>
+</html>
